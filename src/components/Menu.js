@@ -8,7 +8,7 @@ import styles from 'styled-components'
 const MenuStyles = styles.div`
   min-height: 100vh;
   background: #1E213A;
-  transition: .5s;
+  transition: 5s;
   .buttonContainer {
     color: #E7E7EB;
     text-align: right;
@@ -17,6 +17,8 @@ const MenuStyles = styles.div`
       background: transparent;
       cursor: pointer;
       border: none;
+      border-radius: 50%;
+      padding: .7em;
       outline: none;
       .icon-close {
         color: #E7E7EB;
@@ -39,7 +41,7 @@ export const Menu = () => {
   return (
     <MenuStyles>
       <p className="buttonContainer">
-        <button onClick={closeMenu}>
+        <button onClick={closeMenu} title="Cerrar">
           <span className="material-icons icon-close">
             close
           </span>
