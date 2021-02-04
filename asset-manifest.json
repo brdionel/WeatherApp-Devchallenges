@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/WeatherApp-Devchallenges/static/css/main.875b7b00.chunk.css",
-    "main.js": "/WeatherApp-Devchallenges/static/js/main.a5cf440b.chunk.js",
-    "main.js.map": "/WeatherApp-Devchallenges/static/js/main.a5cf440b.chunk.js.map",
+    "main.css": "/WeatherApp-Devchallenges/static/css/main.b19e0a12.chunk.css",
+    "main.js": "/WeatherApp-Devchallenges/static/js/main.04275138.chunk.js",
+    "main.js.map": "/WeatherApp-Devchallenges/static/js/main.04275138.chunk.js.map",
     "runtime-main.js": "/WeatherApp-Devchallenges/static/js/runtime-main.410492dd.js",
     "runtime-main.js.map": "/WeatherApp-Devchallenges/static/js/runtime-main.410492dd.js.map",
     "static/js/2.ebdb8fb5.chunk.js": "/WeatherApp-Devchallenges/static/js/2.ebdb8fb5.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.521c3a7a.chunk.js": "/WeatherApp-Devchallenges/static/js/3.521c3a7a.chunk.js",
     "static/js/3.521c3a7a.chunk.js.map": "/WeatherApp-Devchallenges/static/js/3.521c3a7a.chunk.js.map",
     "index.html": "/WeatherApp-Devchallenges/index.html",
-    "static/css/main.875b7b00.chunk.css.map": "/WeatherApp-Devchallenges/static/css/main.875b7b00.chunk.css.map",
+    "static/css/main.b19e0a12.chunk.css.map": "/WeatherApp-Devchallenges/static/css/main.b19e0a12.chunk.css.map",
     "static/js/2.ebdb8fb5.chunk.js.LICENSE.txt": "/WeatherApp-Devchallenges/static/js/2.ebdb8fb5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.410492dd.js",
     "static/js/2.ebdb8fb5.chunk.js",
-    "static/css/main.875b7b00.chunk.css",
-    "static/js/main.a5cf440b.chunk.js"
+    "static/css/main.b19e0a12.chunk.css",
+    "static/js/main.04275138.chunk.js"
   ]
 }
