@@ -35,8 +35,25 @@ const HeaderStyle = styles.div`
       color: #110E3C;
       transition: all .5s ease;
     }
+    .hvr-shrink {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+    }
+    .hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
   }
   `
+
+
 
 const HeaderDetails = () => {
   const dispatch = useDispatch()
@@ -50,13 +67,13 @@ const HeaderDetails = () => {
   return (
     <HeaderStyle className='header'>
       <button
-        className={`degrees ${!fahrenheit ? 'isActive' : ''}`}
+        className={`degrees ${!fahrenheit ? 'isActive' : ''} hvr-shrink`}
         onClick={handleCelsius}
       >
         ℃
       </button>
       <button
-        className={`${fahrenheit ? 'isActive' : ''}`}
+        className={`${fahrenheit ? 'isActive' : ''} hvr-shrink`}
         onClick={handleFahrenheit}
       >
         ℉

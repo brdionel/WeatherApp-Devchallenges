@@ -27,6 +27,7 @@ const TodayStyle = styles.div`
         background: #6E707A;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         margin: 18px 0 0 12px;
+        outline: none;
         &:hover {
           cursor: pointer;
         }
@@ -42,6 +43,7 @@ const TodayStyle = styles.div`
         background: #6E707A;
         margin: 18px 12px 0 0;
         display: flex;
+        outline: none;
         &:hover {
           cursor: pointer;
         }
@@ -116,6 +118,56 @@ const TodayStyle = styles.div`
         }
       }
     }
+    .hvr-overline-from-left {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
+      overflow: hidden;
+    }
+    .hvr-overline-from-left:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 100%;
+      top: 0;
+      background: #FFEC65;
+      height: 4px;
+      -webkit-transition-property: right;
+      transition-property: right;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+    .hvr-overline-from-left:hover:before, .hvr-overline-from-left:focus:before, .hvr-overline-from-left:active:before {
+      right: 0;
+    }
+    .hvr-icon-grow {
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+    }
+    .hvr-icon-grow .hvr-icon {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+    .hvr-icon-grow:hover .hvr-icon {
+      -webkit-transform: scale(1.2) translateZ(0);
+      transform: scale(1.2) translateZ(0);
+    }
   `
 
 const LoaderContainer = styles.div`
@@ -157,11 +209,11 @@ export const Today = () => {
   return (
     <TodayStyle>
       <header className='header'>
-        <button className='header__button' onClick={handleSearch}>
+        <button className='header__button hvr-overline-from-left' onClick={handleSearch}>
           Search for places
         </button>
-        <button className='header__icon' onClick={handleCurrentClick}>
-          <span className='material-icons' id='location'>
+        <button className='header__icon hvr-icon-grow' onClick={handleCurrentClick}>
+          <span className='material-icons hvr-icon' id='location'>
             my_location
           </span>
         </button>

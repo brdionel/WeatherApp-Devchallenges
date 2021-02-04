@@ -17,6 +17,7 @@ const MenuStyles = styles.div`
       background: transparent;
       cursor: pointer;
       border: none;
+      outline: none;
       .icon-close {
         color: #E7E7EB;
       }
